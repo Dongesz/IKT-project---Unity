@@ -594,6 +594,7 @@ GameObject:
   m_Component:
   - component: {fileID: 435423061}
   - component: {fileID: 435423060}
+  - component: {fileID: 435423062}
   m_Layer: 0
   m_Name: PlayerCam
   m_TagString: Untagged
@@ -630,6 +631,21 @@ Transform:
   - {fileID: 635773991}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &435423062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435423059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c2789dff85c25f479a6974c0e85f276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 635773991}
+  maxTilt: 4
+  tiltSpeed: 7
 --- !u!4 &447886789 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -6333915994420871684, guid: c04fd222ab7b7f9459287d1d1f0102c0, type: 3}
@@ -1241,13 +1257,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1089519500}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.6258058, y: 0.07609262, z: 0.71393824, w: 0.3047444}
-  m_LocalPosition: {x: 0.012, y: 0.907, z: -0.003}
+  m_LocalRotation: {x: 0.6138168, y: 0.14370818, z: 0.6765566, w: 0.38058928}
+  m_LocalPosition: {x: 0.025, y: 0.877, z: -0.048}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1802616898}
-  m_LocalEulerAnglesHint: {x: 15.829, y: 77.688, z: 146.545}
+  m_LocalEulerAnglesHint: {x: 15.829, y: 77.688, z: 134.057}
 --- !u!4 &1143549098 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6354936817999962851, guid: c04fd222ab7b7f9459287d1d1f0102c0, type: 3}
