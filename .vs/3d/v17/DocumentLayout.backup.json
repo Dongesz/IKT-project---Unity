@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0FE4A87D-3C8D-0B2E-EE5C-7AD00A01FFEA}|Assembly-CSharp.csproj|d:\\unityprojects\\3d\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0FE4A87D-3C8D-0B2E-EE5C-7AD00A01FFEA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0FE4A87D-3C8D-0B2E-EE5C-7AD00A01FFEA}|Assembly-CSharp.csproj|d:\\unityprojects\\3d\\assets\\scripts\\player\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0FE4A87D-3C8D-0B2E-EE5C-7AD00A01FFEA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,21 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CameraMovement.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\3d\\Assets\\Scripts\\Player\\CameraMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\CameraMovement.cs",
-              "ToolTip": "D:\\UnityProjects\\3d\\Assets\\Scripts\\Player\\CameraMovement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\CameraMovement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T21:02:35.071Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -41,7 +24,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMovement.cs",
               "ToolTip": "D:\\UnityProjects\\3d\\Assets\\Scripts\\Player\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMovement.cs",
-              "ViewState": "AgIAAKYAAAAAAAAAAAAcwCoBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAOAAAAAAAAAAAAAAwCoBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-14T20:21:16.769Z",
               "EditorCaption": ""
