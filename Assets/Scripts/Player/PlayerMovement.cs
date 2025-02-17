@@ -2,6 +2,7 @@
 
 using System;
 using UnityEngine;
+using UnityEngine.LowLevel;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -9,10 +10,13 @@ public class PlayerMovement : MonoBehaviour
     //Assingables
     public Transform playerCam;
     public Transform orientation;
+    public Transform playerRoot;
+    public Transform playerView;
+    
 
     //Other
     private Rigidbody rb;
-
+    private CapsuleCollider col;
     //Rotation and look
     private float xRotation;
     private float sensitivity = 50f;
@@ -50,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        col = GetComponent<CapsuleCollider>();
     }
 
     void Start()
@@ -57,6 +62,7 @@ public class PlayerMovement : MonoBehaviour
         playerScale = transform.localScale;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
     }
 
 
@@ -88,23 +94,19 @@ public class PlayerMovement : MonoBehaviour
             StopCrouch();
     }
 
-    private void StartCrouch()
+    // Crouch helyett
+    void StartCrouch()
     {
-        transform.localScale = crouchScale;
-        transform.position = new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z);
-        if (rb.linearVelocity.magnitude > 0.5f)
-        {
-            if (grounded)
-            {
-                rb.AddForce(orientation.transform.forward * slideForce);
-            }
-        }
+        col.height = 2.0f;
+        // Eredetileg pl. 2.0f. Kisebbre veszed.
+        // Kamera lehúzása
+        playerView.localPosition = new Vector3(0, -0.4f, 0);
     }
 
-    private void StopCrouch()
+    void StopCrouch()
     {
-        transform.localScale = playerScale;
-        transform.position = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
+        col.height = 4.0f;
+        playerView.localPosition = Vector3.zero;
     }
 
     private void Movement()

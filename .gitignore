@@ -67,3 +67,5 @@
 # Ignore Windows system files
 Thumbs.db
 Desktop.ini
+
+.vs/
