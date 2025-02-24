@@ -91,7 +91,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftControl))
             StartCrouch();
         if (Input.GetKeyUp(KeyCode.LeftControl))
-            StopCrouch();
+            StopCrouch();  
     }
 
     // Crouch helyett
@@ -297,5 +297,4 @@ public class PlayerMovement : MonoBehaviour
     {
         grounded = false;
     }
-
 }
