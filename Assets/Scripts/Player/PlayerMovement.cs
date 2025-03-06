@@ -297,4 +297,9 @@ public class PlayerMovement : MonoBehaviour
     {
         grounded = false;
     }
+    public bool IsGrounded()
+    {
+        return grounded;
+    }
+
 }
